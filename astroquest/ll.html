@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AstroQuest - Where Knowledge Meets the Stars</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="landing.css">
+</head>
+<body>
+    <video class="background-video" autoplay loop muted>
+        <source src="https://videos.pexels.com/video-files/1851190/1851190-uhd_2560_1440_25fps.mp4" type="video/mp4">
+    </video>
+
+
+    <div class="hero-section">
+        <header class="navbar">
+            <div class="categories-dropdown">
+                <img src="category.png" alt="Category icon" class="category-icon">
+                <span class="categories-text">Categories</span>
+                <div class="categories-panel">
+                    <ul>
+                        <li>Explore the Cosmos</li>
+                        <li>Fun Space Facts</li>
+                        <li>Quizzes & Challenges</li>
+                        <li>Resources & Practice Problems</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="logo">
+                <span class="logo-text">AstroQuest</span><span class="logo-dot">.</span>
+            </div>
+
+            <div class="auth-buttons">
+                <button class="btn signup-btn" id="registerBtn">Sign up</button>
+                <button class="btn login-btn" id="loginBtn">Log in</button>
+                <div class="user-icon">
+                    <img src="avatar.png" alt="User" class="user-img">
+                </div>
+            </div>
+            
+        </header>
+
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Where<br>Knowledge<br>Meets the Stars</h1>
+                <div class="separator"></div>
+                <button class="learn-now-btn">Learn Now</button>
+                <p class="hero-description">
+                    explore stars, galaxies, and black holes through interactive
+                    lessons and quizzes. Astrophysics made fun, visual, and
+                    accessible for all curious minds.
+                </p>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <svg width="24" height="40" viewBox="0 0 24 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 1L12 39M12 39L23 28M12 39L1 28" stroke="#FF3366" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </div>
+    </div>
+
+    <footer class="contact-bar">
+        <div class="contact-container">
+            <div class="contact-label">Contacts:</div>
+            <div class="contact-info">
+                <div class="phone-contact">
+                    <img src="Phone.png" alt="Phone" class="contact-icon">
+                    <div class="contact-details">
+                        <div>+77079550105</div>
+                        <div>+77027839080</div>
+                    </div>
+                </div>
+                <div class="email-contact">
+                    <img src="mail.png" alt="Email" class="contact-icon">
+                    <div class="contact-details">
+                        <div>220317035@stu.sdu.edu.kz</div>
+                        <div>220317039@stu.sdu.edu.kz</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Login/Register Modal -->
+<div id="loginModal" class="modal">
+    <div class="modal-content">
+      <div class="auth-container">
+        <h1 class="auth-title">AstroQuest<span class="dot">.</span></h1>
+  
+        <div class="tabs">
+          <div class="tab active" id="loginTab">Log In</div>
+          <div class="tab" id="registerTab">Register</div>
+        </div>
+  
+        <form id="loginForm" class="auth-form">
+          <!-- Login Form Fields -->
+          <div class="form-group login-field">
+            <label for="loginEmail">Email Address</label>
+            <input type="email" id="loginEmail" placeholder="Enter your email" required />
+          </div>
+  
+          <div class="form-group login-field">
+            <label for="loginPassword">Password</label>
+            <input type="password" id="loginPassword" placeholder="Enter your password" required />
+          </div>
+          
+          <!-- Register Form Fields -->
+          <div class="form-group register-field" style="display: none;">
+            <label for="fullName">Full Name</label>
+            <input type="text" id="fullName" placeholder="Enter your full name" required />
+          </div>
+          
+          <div class="form-group register-field" style="display: none;">
+            <label for="registerEmail">Email Address</label>
+            <input type="email" id="registerEmail" placeholder="Enter your email" required />
+          </div>
+  
+          <div class="form-group register-field" style="display: none;">
+            <label for="registerPassword">Password</label>
+            <input type="password" id="registerPassword" placeholder="Enter your password" required />
+          </div>
+          
+          <div class="form-group register-field" style="display: none;">
+            <label for="confirmPassword">Confirm Password</label>
+            <input type="password" id="confirmPassword" placeholder="Confirm your password" required />
+          </div>
+  
+          <button type="submit" class="auth-button">Log In</button>
+  
+          <p class="switch-prompt">Don't have an account?</p>
+          <a href="#" class="switch-link" id="createAccountLink">Create an account</a>
+        </form>
+      </div>
+    </div>
+  </div>
+  
+
+    <script src="landing.js"></script>
+</body>
+</html>
